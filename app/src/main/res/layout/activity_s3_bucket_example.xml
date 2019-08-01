@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S3BucketExample">
+
+    <Button
+        android:id="@+id/downloadSd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:onClick="downloadFileFromS3"
+        android:text="Download S3 File" />
+
+    <Button
+        android:id="@+id/fetchFileToS3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/downloadSd3"
+        android:layout_marginTop="48dp"
+        android:onClick="fetchFileFromS3"
+        android:text="Fetch File From S3" />
+
+</RelativeLayout>

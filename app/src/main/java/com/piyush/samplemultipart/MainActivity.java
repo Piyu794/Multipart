@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 //            e.printStackTrace();
 //        }
     }
-
     private File createFile() {
         File f = new File(getCacheDir(), "sample.jpeg");
         try {
