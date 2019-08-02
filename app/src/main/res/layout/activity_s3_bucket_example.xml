@@ -6,20 +6,32 @@
     tools:context=".S3BucketExample">
 
     <Button
-        android:id="@+id/downloadSd3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:onClick="downloadFileFromS3"
-        android:text="Download S3 File" />
-
-    <Button
         android:id="@+id/fetchFileToS3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/downloadSd3"
-        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
         android:onClick="fetchFileFromS3"
-        android:text="Fetch File From S3" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Fetch Files" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFiles"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarSize="5dp"
+        android:layout_above="@+id/fetchFileToS3"/>
+
+    <TextView
+        android:id="@+id/tvNoFile"
+        android:text="No Files Here..."
+        android:textColor="#8B8A8A"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
